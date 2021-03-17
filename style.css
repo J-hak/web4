@@ -1,0 +1,42 @@
+<style>
+  a {color:black;
+    text-decoration: none;
+  }
+
+/*
+display:none 하면 화면에서 안보이게 된다. 선택자에서 ,를 써서 중복을 줄일수 있다.
+*/
+  h1 {
+    border-bottom:1px solid gray;
+    padding:30px;
+    margin:0;
+    font-size:40px;
+    text-align:center;
+  }
+  #grid ol{
+    border-right:1px solid gray;
+    width:150px;
+    margin:0;
+    padding:20px;
+    padding-left:33px;
+
+
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+
+  }
+  #grid #article{
+    padding-left:25px;
+  }
+  #grid #respond{
+    border:10px solid green;
+    font-size:60px;
+  }
+  @media(max-width:800px){
+  #grid #respond{
+    display:none;
+  }
+}
+  </style>
